@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: gainsboro;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.todo-container {
+	width: 30vw;
+	height: 80vh;
+	background-color: blanchedalmond;
+	margin: 100px auto;
+	display: block;
+	overflow: auto;
+	border-radius: 30px;
+	/* overflow-y: scroll ; */
+}
+
+.todo-area {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	width: 100%;
+	max-width: 100%;
+}
+
+.todo-inner-area {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding-left: 0;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+}
+.input-area {
+	justify-content: center;
+	display: flex;
+	padding-left: 0;
+	width: 90%;
+	margin-right: auto;
+	margin-top: 40px;
+}
+
+.todo-input {
+	margin: auto auto;
+	border: 2px solid green;
+	width: 60%;
+	height: 2rem;
+	padding-left: 8px;
+	opacity: 80%;
+	border-radius: 5px;
+}
+
+.todo-input::placeholder {
+	opacity: 70%;
+	font-style: italic;
+	/* padding-left: 6px; */
+}
+.input-btn {
+	border-radius: 0.3rem;
+	margin-right: 3px;
+	/* border: 1px solid rgb(109, 128, 0); */
+}
+
+li {
+	width: 78%;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 0.7rem;
+	display: flex;
+}
+h2 {
+	padding-top: 50px;
+	text-align: center;
+}
+
+button {
+	border: none;
+	border-radius: 0.6rem;
+	color: white;
+	background-color: var(--backComp);
+	padding: 0.65em;
+	min-width: min(30%, calc(50px + 0.65em));
+	padding-left: 0.8rem;
+	padding-right: 0.8rem;
+	--backComp: rgb(212, 212, 3);
+	--backDel: rgb(236, 22, 22);
+}
+
+span {
+	/* padding-top: .1rem; */
+	max-width: 5rem;
+	overflow: auto;
+	overflow-wrap: normal;
+	/* height: 100%; */
+}
+
+/* span::-webkit-scrollbar{
+    width: 5px;
+} */
+
+.delete {
+	background-color: var(--backDel);
+}
+
+button:hover {
+	background-color: black;
+}
